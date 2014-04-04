@@ -3,7 +3,7 @@
 read -p "User: " user
 read -s -p "Password: " password
 
-echo -e "\nPlease wait..."
+echo
 
 casperjs ./scraper/okq8-scraper.js --user="$user" --password="$password"
 
