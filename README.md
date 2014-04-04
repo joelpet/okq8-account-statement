@@ -1,7 +1,7 @@
 OKQ8 Bank statement of account 
 ==============================
 
-THis project aims to automize retreiving statement of bank account at OKQ8 in a
+This project aims to automize retreiving statement of bank account at OKQ8 in a
 structured data format.
 
 Instructions
