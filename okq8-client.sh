@@ -19,4 +19,6 @@ if [ $? -ne 0 ]; then
     exit
 fi
 
-grep -A 1 -E "^[0-9]{6}" statement.txt | sed -f fix_date.sed
+grep -A 1 -E "^[0-9]{6}" statement.txt \
+    | sed -f clean.sed \
+    | tee statement-1.txt
