@@ -13,3 +13,10 @@ if [ $? -ne 0 ]; then
 fi
 
 pdftotext -layout statement.pdf
+
+if [ $? -ne 0 ]; then
+    echo "pdftotext failed"
+    exit
+fi
+
+grep -A 1 -E "^[0-9]{6}" statement.txt | sed -f fix_date.sed
