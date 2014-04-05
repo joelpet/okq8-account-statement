@@ -15,7 +15,7 @@ BEGIN {
     } else if (NF >= 2) {
         prev_date = $1
         prev_desc = $2
-        prev_amount = $3
+        prev_amount = $NF
     }
 }
 /^[[:space:]]+[^[:space:]]*$/ {

@@ -12,16 +12,4 @@ if [ $? -ne 0 ]; then
     exit
 fi
 
-pdftotext -layout statement.pdf
-
-if [ $? -ne 0 ]; then
-    echo "pdftotext failed"
-    exit
-fi
-
-sh txt-parser.sh
-
-if [ $? -ne 0 ]; then
-    echo "txt-parser failed"
-    exit
-fi
+sh ./csv-converter.sh
