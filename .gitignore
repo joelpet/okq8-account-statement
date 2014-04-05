@@ -11,4 +11,5 @@ Session.vim
 
 ### Other ###
 statement.pdf
-statement.txt
+statement*.txt
+statement.csv
