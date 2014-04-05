@@ -19,7 +19,7 @@ var capture = function(obj) {
 var user = casper.cli.get('user');
 var password = casper.cli.get('password');
 
-casper.start('https://nettbank.edb.com/Logon/index.jsp?to_page=https://nettbank.edb.com/cardpayment/transigo/logon/done/okq8&from_page=http://www.okq8.se&domain=0066', function() {
+casper.start('https://nettbank.edb.com/cardpayment/index.jsp?n_bank=0066', function() {
         this.fillSelectors('form[action*="/Logon/logon/step1"]', {
             'input[name=user_id]': user,
             'input[name=password]': password
