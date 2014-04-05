@@ -3,6 +3,7 @@ BEGIN {
     prev_date = "";
     prev_desc = "";
     prev_amount = "";
+    print "Datum; Beskrivning; Belopp (Uttag + / Inbetalningar -)"
 }
 /^2014/ {
     if (NR > 1) {
