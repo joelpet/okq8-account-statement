@@ -19,6 +19,9 @@ if [ $? -ne 0 ]; then
     exit
 fi
 
-grep -A 1 -E "^[0-9]{6}" statement.txt \
-    | sed -f clean.sed \
-    | tee statement-1.txt
+sh txt-parser.sh
+
+if [ $? -ne 0 ]; then
+    echo "txt-parser failed"
+    exit
+fi
