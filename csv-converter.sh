@@ -9,4 +9,5 @@ pdftotext -layout statement.pdf - \
     | sed -f clean.sed \
     | tee /tmp/statement-4.txt \
     | awk -f to_csv.awk \
+    | iconv -t iso_8859-1 \
     | tee statement.csv
