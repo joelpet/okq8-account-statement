@@ -12,4 +12,4 @@ if [ $? -ne 0 ]; then
     exit
 fi
 
-sh ./csv-converter.sh
+bash ./csv-converter.sh
